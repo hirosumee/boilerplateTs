@@ -6,6 +6,7 @@ const logger = require("morgan");
 const winstonLogger_1 = require("./middleWares/winstonLogger");
 const mongoose_1 = require("mongoose");
 const mongoose = require("mongoose");
+const routers_1 = require("./routers");
 class App {
     constructor() {
         this.environmentHost = process.env.NODE_EVN || "Development";
@@ -30,6 +31,7 @@ class App {
             limit: "5mb",
             parameterLimit: 5000
         }));
+        this.app.use(routers_1.default.getRoute());
         //Morgan middleware
         this.environmentHost === "Development" ?
             this.app.use(logger("combined"))

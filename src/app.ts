@@ -7,6 +7,8 @@ import {Mongoose,Connection,connect} from 'mongoose';
 import * as mongoose from "mongoose";
 import { MongoError } from "mongodb";
 
+import RouterLoader from './routers';
+
 
 class App{
     public app:Application;
@@ -26,7 +28,7 @@ class App{
             })
             .catch((error:MongoError)=>{
                 winstonLogger.error(`Mongoose orcur a error: ${error}`);
-            })
+            });
         //body parser middleware config
         this.app.use(json());
         this.app.use(urlencoded({
@@ -34,6 +36,8 @@ class App{
             limit:"5mb",
             parameterLimit:5000
         }));
+
+        this.app.use(RouterLoader.getRoute());
         //Morgan middleware
         this.environmentHost==="Development"?
             this.app.use(logger("combined"))

@@ -17,5 +17,5 @@ var winstonLogger:LoggerInstance=new winston.Logger({
 winstonLogger.handleExceptions(new transports.File({filename:"exceptions.log"}));
 process.on("unhandledRejection",(reason,p)=>{
     winstonLogger.warn("Possibly Unhandled Rejection at :",p,"reason",reason);
-})
+});
 export default winstonLogger;
