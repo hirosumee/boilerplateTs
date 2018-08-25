@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const app_1 = require("./app");
 const http = require("http");
 const winstonLogger_1 = require("./middleWares/winstonLogger");
-const port = normalizePort(process.env.PORT || 3000);
+const port = normalizePort(process.env.PORT);
 const server = http.createServer(app_1.default.app);
 server.listen(port);
 server.on("listening", () => {

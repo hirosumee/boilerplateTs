@@ -1,5 +1,4 @@
 import * as winston from "winston";
-import {Application} from 'express';
 import {LoggerInstance,transports} from "winston";
 var winstonLogger:LoggerInstance=new winston.Logger({
     transports:[
@@ -10,7 +9,7 @@ var winstonLogger:LoggerInstance=new winston.Logger({
             handleExceptions:true,
             humanReadableUnhandledException:true
         }),
-        new transports.File({filename:"server.log"})  
+        new transports.File({filename:"server.log"})
     ]
 });
 //

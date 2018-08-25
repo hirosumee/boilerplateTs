@@ -1,48 +1,74 @@
 import * as express from "express";
 import {Application} from "express";
-import {json,urlencoded} from "body-parser";
+import {json, urlencoded} from "body-parser";
 import * as logger from "morgan";
-import winstonLogger from "./middleWares/winstonLogger";
-import {Mongoose,Connection,connect} from 'mongoose';
+import {Mongoose, Connection, connect} from 'mongoose';
 import * as mongoose from "mongoose";
-import { MongoError } from "mongodb";
+import {MongoError} from "mongodb";
+import * as dotnv from "dotenv";
+import errorHandler = require("errorhandler");
+import session = require("express-session");
 
 import RouterLoader from './routers';
+import winstonLogger from "./middleWares/winstonLogger";
 
 
-class App{
-    public app:Application;
-    private environmentHost:string=process.env.NODE_EVN||"Development";
-    public mongooseConnection:Connection;
-    constructor(){
-        this.app=express();
+dotnv.config();
+
+class App {
+    public app: Application;
+    private environmentHost: string = process.env.NODE_EVN || "Development";
+    public  mongooseConnection: Connection;
+
+    constructor() {
+        this.app = express();
         this.configure();
     }
-    private configure():void{
+
+    private configure(): void {
         //connect mongoose
-        (mongoose as Mongoose).Promise=global.Promise;
-        connect("mongodb://hirosume:cuong299@ds012578.mlab.com:12578/chatbot")
-            .then(()=>{
-                this.mongooseConnection=mongoose.connection;
+        (mongoose as Mongoose).Promise = global.Promise;
+        connect(process.env.DB_CONNECTION)
+            .then(() => {
+                //mongooseConnection is useful when we want to use native mongodb
+                this.mongooseConnection = mongoose.connection;
                 winstonLogger.info("Mongoose connection!!");
             })
-            .catch((error:MongoError)=>{
-                winstonLogger.error(`Mongoose orcur a error: ${error}`);
+            .catch((error: MongoError) => {
+                winstonLogger.error(`Mongoose occurred a error: ${error}`);
             });
+        //Morgan middleware
+        this.environmentHost === "Development" ?
+            this.app.use(logger("combined"))
+            : this.app.use(logger("common"));
+
+        //static resource config
+        this.app.use(express.static(__dirname + '/public'));
         //body parser middleware config
         this.app.use(json());
         this.app.use(urlencoded({
-            extended:false,
-            limit:"5mb",
-            parameterLimit:5000
+            extended: false,
+            limit: "5mb",
+            parameterLimit: 5000
         }));
-
+        this.app.use(
+            session(
+                {
+                    secret: 'conduit',
+                    cookie:
+                        {
+                            maxAge: 60000
+                        },
+                    resave: false,
+                    saveUninitialized: false
+                }
+            )
+        );
+        //error handler
+        this.environmentHost === "Development" ? this.app.use(errorHandler()) : undefined;
         this.app.use(RouterLoader.getRoute());
-        //Morgan middleware
-        this.environmentHost==="Development"?
-            this.app.use(logger("combined"))
-            :this.app.use(logger("common"));
 
     }
 }
+
 export default new App();

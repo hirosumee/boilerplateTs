@@ -3,10 +3,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express = require("express");
 const body_parser_1 = require("body-parser");
 const logger = require("morgan");
-const winstonLogger_1 = require("./middleWares/winstonLogger");
 const mongoose_1 = require("mongoose");
 const mongoose = require("mongoose");
+const dotnv = require("dotenv");
+const errorHandler = require("errorhandler");
+const session = require("express-session");
 const routers_1 = require("./routers");
+const winstonLogger_1 = require("./middleWares/winstonLogger");
+dotnv.config();
 class App {
     constructor() {
         this.environmentHost = process.env.NODE_EVN || "Development";
@@ -16,14 +20,21 @@ class App {
     configure() {
         //connect mongoose
         mongoose.Promise = global.Promise;
-        mongoose_1.connect("mongodb://hirosume:cuong299@ds012578.mlab.com:12578/chatbot")
+        mongoose_1.connect(process.env.DB_CONNECTION)
             .then(() => {
+            //mongooseConnection is useful when we want to use native mongodb
             this.mongooseConnection = mongoose.connection;
             winstonLogger_1.default.info("Mongoose connection!!");
         })
             .catch((error) => {
-            winstonLogger_1.default.error(`Mongoose orcur a error: ${error}`);
+            winstonLogger_1.default.error(`Mongoose occurred a error: ${error}`);
         });
+        //Morgan middleware
+        this.environmentHost === "Development" ?
+            this.app.use(logger("combined"))
+            : this.app.use(logger("common"));
+        //static resource config
+        this.app.use(express.static(__dirname + '/public'));
         //body parser middleware config
         this.app.use(body_parser_1.json());
         this.app.use(body_parser_1.urlencoded({
@@ -31,11 +42,17 @@ class App {
             limit: "5mb",
             parameterLimit: 5000
         }));
+        this.app.use(session({
+            secret: 'conduit',
+            cookie: {
+                maxAge: 60000
+            },
+            resave: false,
+            saveUninitialized: false
+        }));
+        //error handler
+        this.environmentHost === "Development" ? this.app.use(errorHandler()) : undefined;
         this.app.use(routers_1.default.getRoute());
-        //Morgan middleware
-        this.environmentHost === "Development" ?
-            this.app.use(logger("combined"))
-            : this.app.use(logger("common"));
     }
 }
 exports.default = new App();

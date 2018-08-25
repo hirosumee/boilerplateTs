@@ -2,7 +2,7 @@ import App from "./app";
 import * as http from "http";
 import winstonLogger from "./middleWares/winstonLogger";
 
-const port = normalizePort(process.env.PORT || 3000);
+const port = normalizePort(process.env.PORT);
 
 const server = http.createServer(App.app);
 

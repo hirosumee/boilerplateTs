@@ -1,19 +1,23 @@
 import IMy_Router from "../../interfaces/Router/IMy_Router";
-import {Router,Request,Response} from "express";
+import {Router, Request, Response, RequestHandler} from "express";
 
 class homeRouter implements IMy_Router{
-    middlewareRegister(): void {
+    middlewareRegister(func:RequestHandler): any {
+        return this;
     }
+
     private router:Router;
+
     getRoute():Router {
         return this.router;
     }
 
-    registerRouter():void {
+    registerRouter():any {
         this.getRoute()
             .get('/',(request:Request,response:Response)=>{
                 response.send('hahah');
-            })
+            });
+        return this;
     }
     constructor(){
         this.router = Router();
