@@ -1,10 +1,32 @@
 import { Router} from 'express';
-import {RequestHandlerParams} from "express-serve-static-core";
+import {PathParams, RequestHandlerParams} from "express-serve-static-core";
 
-interface IMy_Router{
+export interface IMy_Router{
     getRoute():Router;
     registerRouter():any;
     middlewareRegister(func:RequestHandlerParams):any;
 }
+export abstract class iRouter implements IMy_Router{
+    protected router:Router;
+    getRoute(): Router {
+        return this.router;
+    }
 
-export default IMy_Router;
+    middlewareRegister(func: RequestHandlerParams): any {
+        this.getRoute()
+            .use(func);
+        return this;
+    }
+
+    registerRouter(): any {
+    }
+
+    use(path: PathParams, route: Router): iRouter {
+        this.router.use(path, route);
+        return this;
+    }
+    protected constructor(){
+        this.router = Router();
+        this.registerRouter();
+    }
+}

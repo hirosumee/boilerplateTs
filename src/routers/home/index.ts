@@ -1,16 +1,7 @@
-import IMy_Router from "../../interfaces/Router/IMy_Router";
+import {iRouter} from "../../interfaces/Router/IMy_Router";
 import {Router, Request, Response, RequestHandler} from "express";
 
-class homeRouter implements IMy_Router{
-    middlewareRegister(func:RequestHandler): any {
-        return this;
-    }
-
-    private router:Router;
-
-    getRoute():Router {
-        return this.router;
-    }
+class homeRouter extends iRouter{
 
     registerRouter():any {
         this.getRoute()
@@ -20,8 +11,7 @@ class homeRouter implements IMy_Router{
         return this;
     }
     constructor(){
-        this.router = Router();
-        this.registerRouter();
+        super();
     }
 }
 
