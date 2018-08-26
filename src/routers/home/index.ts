@@ -1,9 +1,9 @@
 import {iRouter} from "../../interfaces/Router/IMy_Router";
 import {Router, Request, Response, RequestHandler} from "express";
 
-class homeRouter extends iRouter{
+class HomeRouter extends iRouter{
 
-    registerRouter():any {
+    registerRouter():HomeRouter {
         this.getRoute()
             .get('/',(request:Request,response:Response)=>{
                 response.send('hahah');
@@ -15,4 +15,4 @@ class homeRouter extends iRouter{
     }
 }
 
-export default (new homeRouter());
+export default (new HomeRouter());

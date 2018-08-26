@@ -6,8 +6,10 @@ import {Mongoose, Connection, connect} from 'mongoose';
 import * as mongoose from "mongoose";
 import {MongoError} from "mongodb";
 import * as dotnv from "dotenv";
-import errorHandler = require("errorhandler");
-import session = require("express-session");
+import * as errorHandler from "errorhandler";
+import * as session from "express-session";
+import * as config from "config";
+import * as passport from "passport";
 
 import RouterLoader from './routers';
 import winstonLogger from "./middleWares/winstonLogger";
@@ -54,7 +56,7 @@ class App {
         this.app.use(
             session(
                 {
-                    secret: 'conduit',
+                    secret: config.get("session.secret"),
                     cookie:
                         {
                             maxAge: 60000
@@ -64,6 +66,9 @@ class App {
                 }
             )
         );
+        // passport config
+        this.app.use(passport.initialize());
+        this.app.use(passport.session());
         //error handler
         this.environmentHost === "Development" ? this.app.use(errorHandler()) : undefined;
         this.app.use(RouterLoader.getRoute());

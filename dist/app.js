@@ -8,6 +8,8 @@ const mongoose = require("mongoose");
 const dotnv = require("dotenv");
 const errorHandler = require("errorhandler");
 const session = require("express-session");
+const config = require("config");
+const passport = require("passport");
 const routers_1 = require("./routers");
 const winstonLogger_1 = require("./middleWares/winstonLogger");
 dotnv.config();
@@ -43,13 +45,16 @@ class App {
             parameterLimit: 5000
         }));
         this.app.use(session({
-            secret: 'conduit',
+            secret: config.get("session.secret"),
             cookie: {
                 maxAge: 60000
             },
             resave: false,
             saveUninitialized: false
         }));
+        // passport config
+        this.app.use(passport.initialize());
+        this.app.use(passport.session());
         //error handler
         this.environmentHost === "Development" ? this.app.use(errorHandler()) : undefined;
         this.app.use(routers_1.default.getRoute());

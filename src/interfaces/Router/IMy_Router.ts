@@ -12,13 +12,14 @@ export abstract class iRouter implements IMy_Router{
         return this.router;
     }
 
-    middlewareRegister(func: RequestHandlerParams): any {
+    middlewareRegister(func: RequestHandlerParams): iRouter {
         this.getRoute()
             .use(func);
         return this;
     }
 
-    registerRouter(): any {
+    registerRouter(): iRouter {
+        return this;
     }
 
     use(path: PathParams, route: Router): iRouter {
