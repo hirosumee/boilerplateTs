@@ -12,6 +12,7 @@ const config = require("config");
 const passport = require("passport");
 const routers_1 = require("./routers");
 const winstonLogger_1 = require("./middleWares/winstonLogger");
+const passportJs_1 = require("./middleWares/passportJs");
 dotnv.config();
 class App {
     constructor() {
@@ -20,6 +21,7 @@ class App {
         this.configure();
     }
     configure() {
+        passportJs_1.default();
         //connect mongoose
         mongoose.Promise = global.Promise;
         mongoose_1.connect(process.env.DB_CONNECTION)

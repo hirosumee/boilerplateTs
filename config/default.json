@@ -1,6 +1,6 @@
 {
-  "session":
-  {
-    "secret":"lonelycat"
-  }
+  "session": {
+    "secret": "lonelycat"
+  },
+  "privateKey": "happycat"
 }

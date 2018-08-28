@@ -13,7 +13,7 @@ import * as passport from "passport";
 
 import RouterLoader from './routers';
 import winstonLogger from "./middleWares/winstonLogger";
-
+import passportLoader from "./middleWares/passportJs";
 
 dotnv.config();
 
@@ -28,6 +28,8 @@ class App {
     }
 
     private configure(): void {
+
+        passportLoader();
         //connect mongoose
         (mongoose as Mongoose).Promise = global.Promise;
         connect(process.env.DB_CONNECTION)
