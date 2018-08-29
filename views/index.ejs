@@ -1,0 +1,15 @@
+<html lang="en">
+<%- include('layouts/header',{resources}) %>
+<body ng-app="BlankApp">
+is login :<%- isAuthenticated ? 'true' : 'false' %>
+<hr>
+<a href="/user/logout">logout</a>
+<a href="/user/register">register</a>
+<form method="post" action="/user/login">
+    <input type="text" name="username">
+    <input type="password" name="password">
+    <md-button type="submit" class="md-raised md-primary">Login</md-button>
+</form>
+</body>
+<%- include('layouts/footer',{resources}) %>
+</html>

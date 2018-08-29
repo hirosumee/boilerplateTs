@@ -46,8 +46,10 @@ class App {
             this.app.use(logger("combined"))
             : this.app.use(logger("common"));
 
+        //view engine
+        this.app.set('view engine','ejs');
         //static resource config
-        this.app.use(express.static(__dirname + '/public'));
+        this.app.use(express.static(__dirname + '/../public'));
         //body parser middleware config
         this.app.use(json());
         this.app.use(urlencoded({

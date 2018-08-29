@@ -37,8 +37,10 @@ class App {
         this.environmentHost === "Development" ?
             this.app.use(logger("combined"))
             : this.app.use(logger("common"));
+        //view engine
+        this.app.set('view engine', 'ejs');
         //static resource config
-        this.app.use(express.static(__dirname + '/public'));
+        this.app.use(express.static(__dirname + '/../public'));
         //body parser middleware config
         this.app.use(body_parser_1.json());
         this.app.use(body_parser_1.urlencoded({
