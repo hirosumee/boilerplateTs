@@ -1,15 +1,21 @@
 <html lang="en">
-<%- include('layouts/header',{resources}) %>
+<%- include('layouts/header',{resources,assets}) %>
 <body ng-app="BlankApp">
 is login :<%- isAuthenticated ? 'true' : 'false' %>
 <hr>
 <a href="/user/logout">logout</a>
 <a href="/user/register">register</a>
 <form method="post" action="/user/login">
-    <input type="text" name="username">
-    <input type="password" name="password">
+    <md-input-container>
+        <label>Username</label>
+        <input type="text" ng-model="username" name="username" required md-maxlength="20">
+    </md-input-container>
+    <md-input-container>
+        <label>Password</label>
+        <input type="password" ng-model="password" name="password" required md-maxlength="20">
+    </md-input-container>
     <md-button type="submit" class="md-raised md-primary">Login</md-button>
 </form>
 </body>
-<%- include('layouts/footer',{resources}) %>
+<%- include('layouts/footer',{resources,assets}) %>
 </html>

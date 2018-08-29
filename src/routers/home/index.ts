@@ -10,7 +10,8 @@ class HomeRouter extends iRouter {
             .get('/', (request: Request, response: Response) => {
                 response.render('index', {
                     resources: config.get('resources'),
-                    isAuthenticated: request.isAuthenticated()
+                    isAuthenticated: request.isAuthenticated(),
+                    assets:config.get('assets')
                 })
             });
         return this;

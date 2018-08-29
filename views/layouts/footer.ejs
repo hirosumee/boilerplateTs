@@ -1,9 +1,10 @@
 <footer>
-    <%
-    resources.js.forEach(function (js) {
-    %>
+    <%# resoureces js loader%>
+    <%resources.js.forEach(function (js) { %>
         <script src="<%-js%>"></script>
-    <%
-    })
-    %>
+    <%})%>
+    <%# assets js loader%>
+    <% assets.js.forEach(function (js) { %>
+        <script src="<%-js%>"></script>
+    <%}) %>
 </footer>

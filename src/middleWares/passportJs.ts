@@ -7,6 +7,9 @@ import {userModel} from '../models/user';
 use(new Strategy(async function (username,password,done) {
     try {
         let user = await userModel.model.findOne({username});
+        if(!user){
+            return done(null, false, { message: 'Incorrect username and password' })
+        }
         let result = await bcrypt.compare(password,user.password);
         if(result){
            return done(null,user);
@@ -14,7 +17,7 @@ use(new Strategy(async function (username,password,done) {
             return done(null, false, { message: 'Incorrect username and password' })
         }
     }catch (e) {
-        done(e);
+        return done(e);
     }
 }));
 // config what will be saved in req.session.passport
