@@ -1,0 +1,21 @@
+<form name="loginForm" action="/user/login" method="post">
+    <md-content class="md-no-momentum">
+        <md-input-container class="md-icon-float md-block">
+            <!-- Use floating label instead of placeholder -->
+            <label>Username</label>
+            <md-icon class="material-icons md-light md-24"> person</md-icon>
+            <input ng-model="user.name" type="text" name="username">
+        </md-input-container>
+
+        <md-input-container class="md-icon-float md-block">
+            <!-- Use floating label instead of placeholder -->
+            <label>Password</label>
+            <md-icon class="material-icons md-light md-24"> lock</md-icon>
+            <input ng-model="user.password" type="password" name="password">
+        </md-input-container>
+
+        <md-input-container class="md-block">
+            <md-button type="submit" class="md-raised">Login</md-button>
+        </md-input-container>
+    </md-content>
+</form>

@@ -1,0 +1,31 @@
+<md-content layout-padding>
+    <form  enctype="multipart/form-data" name="uploadForm" ng-submit="::vm.submit(vm.setPassword,vm.filePassword)">
+        <div layout="row">
+            <md-input-container class="md-block" flex="50">
+                <md-switch class="md-primary" name="accessor" ng-model="vm.accessor">
+                    Public
+                </md-switch>
+            </md-input-container>
+            <md-input-container class="md-block" flex="50">
+                <md-switch class="md-primary"  ng-model="vm.setPassword">
+                    Password
+                </md-switch>
+            </md-input-container>
+        </div>
+        <div ng-if="vm.setPassword">
+            <md-input-container>
+                <label>Password</label>
+                <md-icon class="name">lock</md-icon>
+                <input type="password" required name="clientName" ng-model="vm.filePassword">
+            </md-input-container>
+        </div>
+        <md-divider></md-divider>
+        <div>
+            <input file-upload-directive="file" class="ng-hide" id="input-file-id" name="fileupload" type="file" required/>
+            <label style="width: 100%" for="input-file-id" class="md-button md-raised md-primary">Choose Files</label>
+        </div>
+        <div>
+            <button type="submit" style="width: 100%" class="md-button md-raised md-primary">Upload</button>
+        </div>
+    </form>
+</md-content>

@@ -27,12 +27,11 @@ class UserRouter extends iRouter {
                 }
             })
             .post('/login', passport.authenticate('local', {
-                successRedirect: '/user',
-                failureRedirect: '/'
+                successRedirect: '/'
             }))
             .get('/logout', (req: Request, res: Response) => {
                 req.logout();
-                res.redirect('/')
+                res.redirect('/#!/')
             })
             .get('/register', function (req: Request, res: Response) {
                 res.send(
