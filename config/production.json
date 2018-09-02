@@ -1,3 +1,5 @@
 {
-
+"mongodb":{
+    "stringConnection":"mongodb://hirosume:cuong299@ds042688.mlab.com:42688/gin-file"
+  } 
 }

@@ -24,7 +24,7 @@ class App {
         passportJs_1.default();
         //connect mongoose
         mongoose.Promise = global.Promise;
-        mongoose_1.connect(process.env.DB_CONNECTION)
+        mongoose_1.connect(config.get('mongodb.stringConnection'))
             .then(() => {
             //mongooseConnection is useful when we want to use native mongodb
             this.mongooseConnection = mongoose.connection;

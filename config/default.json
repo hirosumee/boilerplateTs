@@ -1,4 +1,7 @@
 {
+  "mongodb":{
+    "stringConnection":"mongodb://localhost:27017/boilerplate"
+  },
   "session": {
     "secret": "lonelycat"
   },

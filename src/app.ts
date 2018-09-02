@@ -32,7 +32,7 @@ class App {
         passportLoader();
         //connect mongoose
         (mongoose as Mongoose).Promise = global.Promise;
-        connect(process.env.DB_CONNECTION)
+        connect(config.get('mongodb.stringConnection'))
             .then(() => {
                 //mongooseConnection is useful when we want to use native mongodb
                 this.mongooseConnection = mongoose.connection;
