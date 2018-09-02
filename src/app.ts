@@ -19,7 +19,7 @@ dotnv.config();
 
 class App {
     public app: Application;
-    private environmentHost: string = process.env.NODE_EVN || "Development";
+    private environmentHost: string = process.env.NODE_EVN || "development";
     public  mongooseConnection: Connection;
 
     constructor() {
@@ -42,7 +42,7 @@ class App {
                 winstonLogger.error(`Mongoose occurred a error: ${error}`);
             });
         //Morgan middleware
-        this.environmentHost === "Development" ?
+        this.environmentHost === "development" ?
             this.app.use(logger("combined"))
             : this.app.use(logger("common"));
 
@@ -74,7 +74,7 @@ class App {
         this.app.use(passport.initialize());
         this.app.use(passport.session());
         //error handler
-        this.environmentHost === "Development" ? this.app.use(errorHandler()) : undefined;
+        this.environmentHost === "development" ? this.app.use(errorHandler()) : undefined;
         this.app.use(RouterLoader.getRoute());
 
     }

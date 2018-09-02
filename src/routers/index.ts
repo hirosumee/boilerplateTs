@@ -31,7 +31,7 @@ class RouterLoader extends iRouter {
                 winstonLogger.error(req.url);
                 winstonLogger.error(err);
                 res.status(code);
-                if (process.env.NODE_ENV === 'Development') {
+                if (process.env.NODE_ENV === 'development') {
                     res.json({
                         errors: {
                             message: err.message,

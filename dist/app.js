@@ -16,7 +16,7 @@ const passportJs_1 = require("./middleWares/passportJs");
 dotnv.config();
 class App {
     constructor() {
-        this.environmentHost = process.env.NODE_EVN || "Development";
+        this.environmentHost = process.env.NODE_EVN || "development";
         this.app = express();
         this.configure();
     }
@@ -34,7 +34,7 @@ class App {
             winstonLogger_1.default.error(`Mongoose occurred a error: ${error}`);
         });
         //Morgan middleware
-        this.environmentHost === "Development" ?
+        this.environmentHost === "development" ?
             this.app.use(logger("combined"))
             : this.app.use(logger("common"));
         //view engine
@@ -60,7 +60,7 @@ class App {
         this.app.use(passport.initialize());
         this.app.use(passport.session());
         //error handler
-        this.environmentHost === "Development" ? this.app.use(errorHandler()) : undefined;
+        this.environmentHost === "development" ? this.app.use(errorHandler()) : undefined;
         this.app.use(routers_1.default.getRoute());
     }
 }
