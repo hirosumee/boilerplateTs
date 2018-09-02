@@ -9,7 +9,7 @@
     "start": "node ./dist",
     "build": "tsc",
     "public":"cd public && npm install",
-    "serve":" cd && npm run dev"
+    "serve":" npm run public && npm run dev"
   },
   "keywords": [],
   "author": "",
