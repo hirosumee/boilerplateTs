@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23d40195-2d4e-4ecf-a43f-54924d7a3f1c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/production.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/index.ts" afterDir="false" />
-    </list>
+    <list default="true" id="23d40195-2d4e-4ecf-a43f-54924d7a3f1c" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -22,7 +15,7 @@
     <session id="490120515">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="24" />
+          <entry key="project.closed" value="25" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="4" />
@@ -87,7 +80,7 @@
           <entry key="json" value="482" />
           <entry key="log" value="1" />
           <entry key="ts" value="8920" />
-          <entry key="txt" value="201" />
+          <entry key="txt" value="219" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -98,7 +91,7 @@
           <entry key="JSON" value="452" />
           <entry key="JavaScript" value="2558" />
           <entry key="Log" value="1" />
-          <entry key="PLAIN_TEXT" value="297" />
+          <entry key="PLAIN_TEXT" value="315" />
           <entry key="TypeScript" value="8910" />
           <entry key="tsconfig" value="30" />
         </counts>
@@ -198,6 +191,8 @@
       <find>setSchema</find>
       <find>model</find>
       <find>user</find>
+      <find>this.environmentHost</find>
+      <find>Development</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -438,7 +433,7 @@
       <workItem from="1535732014900" duration="3389000" />
       <workItem from="1535762911670" duration="155000" />
       <workItem from="1535861959068" duration="14298000" />
-      <workItem from="1535900596233" duration="323000" />
+      <workItem from="1535900596233" duration="389000" />
     </task>
     <task id="LOCAL-00001" summary="update routerloader">
       <created>1535128981558</created>
@@ -503,15 +498,21 @@
       <option name="project" value="LOCAL" />
       <updated>1535877649128</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update procfile">
+      <created>1535900952402</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1535900952402</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105987000" />
+    <option name="totallyTimeSpent" value="106053000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1922" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="npm" order="1" sideWeight="0.41296062" side_tool="true" weight="0.14514408" />
@@ -526,13 +527,13 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="TypeScript" order="8" weight="0.3297587" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5006435" side_tool="true" weight="0.25603217" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.14316703" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.14239131" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Mongo Explorer" order="3" weight="0.20651014" />
-      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="4" sideWeight="0.6293478" visible="true" weight="0.25080043" />
-      <window_info anchor="right" id="Run" order="5" sideWeight="0.37065217" side_tool="true" visible="true" weight="0.25080043" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="4" sideWeight="0.6299113" visible="true" weight="0.25080043" />
+      <window_info anchor="right" id="Run" order="5" sideWeight="0.37008873" side_tool="true" weight="0.25080043" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -553,7 +554,8 @@
     <MESSAGE value="assets loader and material design" />
     <MESSAGE value="update upload file" />
     <MESSAGE value="fix conflict" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix conflict" />
+    <MESSAGE value="update procfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="update procfile" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/node_modules/@types/express-serve-static-core/index.d.ts">
