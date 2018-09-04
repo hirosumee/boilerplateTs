@@ -12,9 +12,6 @@ server.on("listening", () => {
 });
 server.on("error", () => {
     winstonLogger_1.default.error("Server orcur a error!!");
-    // console.log(
-    //     "Server orcur a error !!!!"
-    // );
 });
 function normalizePort(param) {
     const portNumber = typeof param === "string" ? parseInt(param, 10) : param;

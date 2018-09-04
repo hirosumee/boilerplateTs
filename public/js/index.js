@@ -10,7 +10,7 @@
             $stateProvider
                 .state({
                     name: 'home',
-                    url: '/',
+                    url: '/:scope',
                     views: {
                         'content@': {
                             templateUrl: '/angular/views/home/index.html',
@@ -39,7 +39,17 @@
                                 controller:'UploadController as vm'
                             }
                     }
+                })
+                .state({
+                    name:'file-info',
+                    url:'/info/:id',
+                    views:{
+                        'content@':{
+                            templateUrl:'/angular/views/file_info/file_info.html',
+                            controller:'FileInfoController as vm'
+                        }
+                    }
                 });
-            $urlRouterProvider.otherwise("/");
+            $urlRouterProvider.otherwise("/global");
         }]);
 }());

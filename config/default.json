@@ -36,7 +36,9 @@
       "angular/controllers/login/login_controller.js",
       "angular/controllers/file_upload/file_upload_controller.js",
       "angular/directives/file_upload_directive.js",
-      "angular/filters/bytes_filter.js"
+      "angular/filters/bytes_filter.js",
+      "angular/controllers/file_info/file_info_controller.js",
+      "angular/services/file_loader_service.js"
     ]
   }
 }

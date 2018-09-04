@@ -18,9 +18,6 @@ server.on(
   "error",
   (): void => {
     winstonLogger.error("Server orcur a error!!");
-    // console.log(
-    //     "Server orcur a error !!!!"
-    // );
   }
 );
 
