@@ -15,12 +15,12 @@
                     });
             },
             reload(scope) {
-                let that = this;
+                let files = this[scope];
                 //should be add query last file for server check
                 $http.post(`/file/load/${scope}`)
                     .then(function (res) {
-                        that[scope].clear();
-                        res.data.forEach(that[scope].push);
+                        files = [];
+                        res.data.forEach(item=>files.push(item));
                     });
             },
             get(scope) {

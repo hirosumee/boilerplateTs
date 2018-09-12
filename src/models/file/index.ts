@@ -5,7 +5,7 @@ class FileModel extends Model{
 
     setSchema(): FileModel {
         this.schema = new Schema({
-            owner:{type:String,required:true},
+            owner:{type:Schema.Types.ObjectId,required:true},
             filename:{type: String,required: true},
             originalname:{type: String,required: true},
             encoding:{type: String,required: true},

@@ -5,27 +5,34 @@
     <!--<md-nav-item name="page1" md-nav-href="/#!/">-->
     <!--Logo-->
     <!--</md-nav-item>-->
-    <md-nav-item name="page1" md-nav-href="/#!" ui-sref="home">
+    <md-nav-item name="page1" md-nav-href="/#!/global" ui-sref="home">
         Home
     </md-nav-item>
 
     <%
     if(!isAuthenticated){
-        %>
-            <md-nav-item md-nav-href="/#!/login" ui-sref="login" >
-                Login
-            </md-nav-item>
-        <%
+    %>
+        <md-nav-item md-nav-href="/#!/login" ui-sref="login">
+            Login
+        </md-nav-item>
+        <md-nav-item md-nav-href="/#!/register" ui-sref="register">
+            Register
+        </md-nav-item>
+    <%
     }
     %>
 
     <%
     if(isAuthenticated){
     %>
+        <md-nav-item md-nav-sref="/#!/chat" name="chat" ui-sref="chat-room">
+            Chat Room
+        </md-nav-item>
+
         <md-nav-item md-nav-sref="#" name="page2">
             <%= user ? user.username : '' %>
         </md-nav-item>
-        <md-nav-item md-nav-href="/user/logout" >
+        <md-nav-item md-nav-href="/user/logout">
             Logout
         </md-nav-item>
     <%

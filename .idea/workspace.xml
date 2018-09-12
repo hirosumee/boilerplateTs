@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23d40195-2d4e-4ecf-a43f-54924d7a3f1c" name="Default Changelist" comment="" />
+    <list default="true" id="23d40195-2d4e-4ecf-a43f-54924d7a3f1c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/angular/controllers/register/register_controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/angular/views/register/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/default.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/default.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/angular/controllers/file_info/file_info_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/angular/controllers/file_info/file_info_controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/angular/controllers/home/home_controler.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/angular/controllers/home/home_controler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/angular/services/file_loader_service.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/angular/services/file_loader_service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/angular/views/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/angular/views/home/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/angular/views/login/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/angular/views/login/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/Model/IModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/Model/IModel.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/file/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/file/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/file/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/file/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/user/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/user/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.ejs" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -15,84 +40,89 @@
     <session id="490120515">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="25" />
+          <entry key="project.closed" value="34" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="4" />
-          <entry key="project.open.time.13" value="3" />
-          <entry key="project.open.time.14" value="2" />
+          <entry key="project.open.time.13" value="5" />
+          <entry key="project.open.time.14" value="4" />
           <entry key="project.open.time.16" value="3" />
+          <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="1" />
-          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="3" />
-          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.3" value="3" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="25" />
+          <entry key="project.opened" value="35" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="Procfile" value="2" />
-          <entry key="ejs" value="14" />
+          <entry key="LICENSE" value="1" />
+          <entry key="Procfile" value="3" />
+          <entry key="code-workspace" value="1" />
+          <entry key="ejs" value="16" />
           <entry key="env" value="2" />
           <entry key="fuse_hidden00002b6600000001" value="1" />
           <entry key="gitignore" value="5" />
-          <entry key="html" value="8" />
-          <entry key="js" value="26" />
-          <entry key="json" value="14" />
+          <entry key="html" value="17" />
+          <entry key="js" value="38" />
+          <entry key="json" value="17" />
           <entry key="local/boilerplate/boilerplate/users" value="7" />
           <entry key="log" value="10" />
           <entry key="md" value="1" />
-          <entry key="ts" value="71" />
+          <entry key="ts" value="81" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="1" />
-          <entry key="EJS" value="14" />
-          <entry key="HTML" value="8" />
-          <entry key="JSON" value="11" />
-          <entry key="JavaScript" value="26" />
+          <entry key="EJS" value="16" />
+          <entry key="HTML" value="17" />
+          <entry key="JSON" value="13" />
+          <entry key="JavaScript" value="38" />
           <entry key="Log" value="6" />
           <entry key="MONGO" value="7" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="13" />
-          <entry key="TypeScript" value="71" />
-          <entry key="tsconfig" value="3" />
+          <entry key="PLAIN_TEXT" value="16" />
+          <entry key="TypeScript" value="81" />
+          <entry key="tsconfig" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="TypeScriptServerServiceImpl" value="21" />
+          <entry key="TypeScriptServerServiceImpl" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Procfile" value="29" />
-          <entry key="ejs" value="1140" />
+          <entry key="ejs" value="1187" />
           <entry key="env" value="79" />
           <entry key="gitignore" value="67" />
-          <entry key="html" value="1868" />
-          <entry key="js" value="2556" />
-          <entry key="json" value="482" />
+          <entry key="html" value="2172" />
+          <entry key="js" value="4865" />
+          <entry key="json" value="491" />
           <entry key="log" value="1" />
-          <entry key="ts" value="8920" />
-          <entry key="txt" value="219" />
+          <entry key="ts" value="9276" />
+          <entry key="txt" value="272" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="79" />
-          <entry key="EJS" value="1138" />
-          <entry key="HTML" value="1878" />
-          <entry key="JSON" value="452" />
-          <entry key="JavaScript" value="2558" />
+          <entry key="EJS" value="1185" />
+          <entry key="HTML" value="2182" />
+          <entry key="JSON" value="461" />
+          <entry key="JavaScript" value="4867" />
           <entry key="Log" value="1" />
-          <entry key="PLAIN_TEXT" value="315" />
-          <entry key="TypeScript" value="8910" />
+          <entry key="PLAIN_TEXT" value="368" />
+          <entry key="TypeScript" value="9266" />
           <entry key="tsconfig" value="30" />
         </counts>
       </usages-collector>
@@ -106,58 +136,67 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/default.json">
+        <entry file="file://$PROJECT_DIR$/src/app.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="980">
-              <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+            <state relative-caret-position="-218">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app.ts">
+        <entry file="file://$PROJECT_DIR$/src/index.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="34" column="41" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="41" />
+            <state relative-caret-position="140">
+              <caret line="8" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.env">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="308">
+              <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/routers/index.ts">
+        <entry file="file://$PROJECT_DIR$/src/socket.io/index.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="712">
-              <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+            <state relative-caret-position="280">
+              <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="62" />
               <folding>
-                <element signature="e#0#37#0" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/routers/user/index.ts">
+        <entry file="file://$PROJECT_DIR$/public/angular/services/socket.io_service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="664">
-              <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+            <state relative-caret-position="28">
+              <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/production.json">
+        <entry file="file://$PROJECT_DIR$/public/angular/controllers/chat/chat_controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="112">
+              <caret line="4" column="38" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -167,10 +206,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="TypeScript File" />
-        <option value="JavaScript File" />
         <option value="tsconfig.json" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -206,10 +245,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/interfaces/Router/IRouter.ts" />
-        <option value="$PROJECT_DIR$/src/middleWares/winstonLogger.ts" />
         <option value="$PROJECT_DIR$/src/Libraries/Classes/Libraries_Classes_Error.ts" />
-        <option value="$PROJECT_DIR$/src/index.ts" />
         <option value="$PROJECT_DIR$/src/interfaces/Router/interfaces-Router-Router_Declare.ts" />
         <option value="$PROJECT_DIR$/src/interfaces/Router/IRouter_Declare.ts" />
         <option value="$PROJECT_DIR$/dist/routers/index.js" />
@@ -226,7 +262,6 @@
         <option value="$PROJECT_DIR$/public/angular/components/home/home_component.js" />
         <option value="$PROJECT_DIR$/public/angular/controllers/login/login_controller.js" />
         <option value="$PROJECT_DIR$/src/routers/home/index.ts" />
-        <option value="$PROJECT_DIR$/public/angular/views/login/index.html" />
         <option value="$PROJECT_DIR$/views/layouts/header.ejs" />
         <option value="$PROJECT_DIR$/public/angular/directives/file_upload_directive.js" />
         <option value="$PROJECT_DIR$/public/angular/views/file_upload/index.html" />
@@ -235,21 +270,32 @@
         <option value="$PROJECT_DIR$/src/models/file/index.ts" />
         <option value="$PROJECT_DIR$/src/models/user/index.ts" />
         <option value="$PROJECT_DIR$/src/interfaces/Model/IModel.ts" />
-        <option value="$PROJECT_DIR$/src/routers/file/index.ts" />
-        <option value="$PROJECT_DIR$/public/angular/controllers/home/home_controler.js" />
         <option value="$PROJECT_DIR$/public/angular/filters/bytes_filter.js" />
-        <option value="$PROJECT_DIR$/config/default.json" />
-        <option value="$PROJECT_DIR$/public/angular/views/home/index.html" />
-        <option value="$PROJECT_DIR$/src/routers/user/index.ts" />
-        <option value="$PROJECT_DIR$/public/js/index.js" />
-        <option value="$PROJECT_DIR$/views/index.ejs" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/config/production.json" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/dist/app.js" />
         <option value="$PROJECT_DIR$/src/app.ts" />
         <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/config/production.json" />
+        <option value="$PROJECT_DIR$/public/angular/views/file_info/file_info.html" />
+        <option value="$PROJECT_DIR$/public/angular/controllers/home/home_controler.js" />
+        <option value="$PROJECT_DIR$/public/angular/services/file_loader_service.js" />
+        <option value="$PROJECT_DIR$/public/angular/controllers/register/register_controller.js" />
+        <option value="$PROJECT_DIR$/public/angular/views/login/index.html" />
+        <option value="$PROJECT_DIR$/public/angular/views/register/index.html" />
+        <option value="$PROJECT_DIR$/views/index.ejs" />
+        <option value="$PROJECT_DIR$/config/default.json" />
+        <option value="$PROJECT_DIR$/public/angular/views/home/index.html" />
+        <option value="$PROJECT_DIR$/dist/routers/user/index.js" />
         <option value="$PROJECT_DIR$/src/routers/index.ts" />
+        <option value="$PROJECT_DIR$/src/routers/user/index.ts" />
+        <option value="$PROJECT_DIR$/public/angular/controllers/file_info/file_info_controller.js" />
+        <option value="$PROJECT_DIR$/src/routers/file/index.ts" />
+        <option value="$PROJECT_DIR$/src/socket.io/index.ts" />
+        <option value="$PROJECT_DIR$/public/js/index.js" />
+        <option value="$PROJECT_DIR$/public/angular/controllers/chat/chat_controller.js" />
+        <option value="$PROJECT_DIR$/public/angular/services/socket.io_service.js" />
+        <option value="$PROJECT_DIR$/src/index.ts" />
       </list>
     </option>
   </component>
@@ -274,13 +320,6 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/package.json" />
-      <path value="$PROJECT_DIR$/public/node_modules/@uirouter/angularjs/package.json" />
-      <path value="$PROJECT_DIR$/public/node_modules/@uirouter/core/package.json" />
-      <path value="$PROJECT_DIR$/public/node_modules/angular-animate/package.json" />
-      <path value="$PROJECT_DIR$/public/node_modules/angular-aria/package.json" />
-      <path value="$PROJECT_DIR$/public/node_modules/angular-material/package.json" />
-      <path value="$PROJECT_DIR$/public/node_modules/angular-messages/package.json" />
-      <path value="$PROJECT_DIR$/public/node_modules/angular/package.json" />
       <path value="$PROJECT_DIR$/public/package.json" />
     </packageJsonPaths>
   </component>
@@ -324,7 +363,143 @@
             <path>
               <item name="boilerplateTs" type="b2602c69:ProjectViewProjectNode" />
               <item name="boilerplateTs" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="angular" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boilerplateTs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boilerplateTs" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="angular" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="chat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boilerplateTs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boilerplateTs" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="angular" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="file_info" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boilerplateTs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boilerplateTs" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="angular" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boilerplateTs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boilerplateTs" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="angular" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boilerplateTs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boilerplateTs" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="angular" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="register" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boilerplateTs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boilerplateTs" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="angular" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boilerplateTs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boilerplateTs" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="angular" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boilerplateTs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boilerplateTs" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="angular" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="file_info" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boilerplateTs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boilerplateTs" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="angular" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="file_upload" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boilerplateTs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boilerplateTs" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="angular" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boilerplateTs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boilerplateTs" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="angular" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boilerplateTs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boilerplateTs" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boilerplateTs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boilerplateTs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boilerplateTs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boilerplateTs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boilerplateTs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boilerplateTs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="routers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boilerplateTs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boilerplateTs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="routers" type="462c0819:PsiDirectoryNode" />
+              <item name="file" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boilerplateTs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boilerplateTs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="routers" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boilerplateTs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boilerplateTs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="socket.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boilerplateTs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boilerplateTs" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -336,7 +511,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ptit_chat" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -365,7 +540,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="npm.start">
     <configuration name="dev" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -392,8 +567,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.dev" />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.start" />
       </list>
@@ -434,6 +609,16 @@
       <workItem from="1535762911670" duration="155000" />
       <workItem from="1535861959068" duration="14298000" />
       <workItem from="1535900596233" duration="389000" />
+      <workItem from="1536022533700" duration="2962000" />
+      <workItem from="1536069383859" duration="5000" />
+      <workItem from="1536108783563" duration="524000" />
+      <workItem from="1536157638833" duration="3403000" />
+      <workItem from="1536161708770" duration="1107000" />
+      <workItem from="1536199645358" duration="685000" />
+      <workItem from="1536208321715" duration="10000" />
+      <workItem from="1536469271086" duration="87000" />
+      <workItem from="1536741507450" duration="2328000" />
+      <workItem from="1536743921315" duration="425000" />
     </task>
     <task id="LOCAL-00001" summary="update routerloader">
       <created>1535128981558</created>
@@ -505,35 +690,51 @@
       <option name="project" value="LOCAL" />
       <updated>1535900952402</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="update file info and file loader service">
+      <created>1536025503535</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1536025503535</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106053000" />
+    <option name="totallyTimeSpent" value="117589000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1922" height="1048" extended-state="6" />
+    <frame x="0" y="-1" width="1600" height="873" extended-state="6" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="npm" order="1" sideWeight="0.41296062" side_tool="true" weight="0.14514408" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
-      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.3994638" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="5" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.32934782" />
       <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="TypeScript" order="8" weight="0.3297587" />
+      <window_info active="true" anchor="bottom" id="TypeScript" order="8" visible="true" weight="0.3297587" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5006435" side_tool="true" weight="0.25603217" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.14239131" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.14208242" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Mongo Explorer" order="3" weight="0.20651014" />
-      <window_info anchor="right" content_ui="combo" id="Project" order="4" sideWeight="0.6299113" visible="true" weight="0.25080043" />
-      <window_info anchor="right" id="Run" order="5" sideWeight="0.37008873" side_tool="true" weight="0.25080043" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="4" sideWeight="0.62608695" visible="true" weight="0.2857143" />
+      <window_info anchor="right" id="Run" order="5" sideWeight="0.37391305" side_tool="true" weight="0.27001068" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -555,63 +756,10 @@
     <MESSAGE value="update upload file" />
     <MESSAGE value="fix conflict" />
     <MESSAGE value="update procfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="update procfile" />
+    <MESSAGE value="update file info and file loader service" />
+    <option name="LAST_COMMIT_MESSAGE" value="update file info and file loader service" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/express-serve-static-core/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="31" column="31" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/interfaces/Router/IRouter_Declare.ts" />
-    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="173" column="2" selection-start-line="173" selection-start-column="2" selection-end-line="173" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/interfaces/Router/AbstractRouter.ts" />
-    <entry file="file://$PROJECT_DIR$/src/routers/user.ts" />
-    <entry file="file://$PROJECT_DIR$/dist/config/default.json" />
-    <entry file="file://$PROJECT_DIR$/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/interfaces/Router/IMy_Router.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/middleWares/requestMiddleware/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exceptions.log" />
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/passport/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/routers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-336">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/package.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -638,11 +786,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server.log">
       <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="-2460">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -651,13 +794,6 @@
             <caret line="1" column="41" lean-forward="true" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -682,21 +818,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/angular/views/login/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/angular/components/home/home_component.js" />
-    <entry file="file://$PROJECT_DIR$/public/angular/controllers/login/login_controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/angular/directives/file_upload_directive.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -729,9 +851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -756,24 +875,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/angular/views/file_upload/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/routers/home/index.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="3" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/angular/views/home/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -784,69 +889,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/angular/controllers/home/home_controler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/routers/file/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1568">
-          <caret line="60" column="55" lean-forward="true" selection-start-line="60" selection-start-column="55" selection-end-line="60" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="653">
           <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/default.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="980">
-          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/routers/user/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -857,34 +903,201 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/production.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/angular/views/file_upload/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/angular/controllers/login/login_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1596">
+          <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workspace-config.code-workspace">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/angular/services/file_loader_service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/angular/views/login/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/routers/user/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/default.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1148">
+          <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/angular/views/home/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routers/user/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="19" column="11" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="19" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/routers/index.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="712">
-          <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="924">
+          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="34" column="41" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/production.json">
+    <entry file="file://$PROJECT_DIR$/public/angular/views/file_info/file_info.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
+    <entry file="file://$PROJECT_DIR$/public/angular/controllers/file_info/file_info_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/angular/controllers/home/home_controler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="8" column="46" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/angular/controllers/register/register_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/angular/views/register/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="36" selection-start-column="36" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routers/file/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="72" column="85" selection-start-line="72" selection-start-column="85" selection-end-line="72" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/angular/controllers/chat/chat_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="38" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/angular/services/socket.io_service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/socket.io/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-218">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="8" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
         </state>
       </provider>
     </entry>

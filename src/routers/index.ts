@@ -1,5 +1,6 @@
 import {NextFunction} from "express";
 import {Request, Response} from "express-serve-static-core";
+import * as status from "http-status";
 
 import winstonLogger from "../middleWares/winstonLogger";
 import {iRouter} from "../interfaces/Router/IMy_Router";
@@ -31,6 +32,10 @@ class RouterLoader extends iRouter {
                 winstonLogger.error(req.url);
                 winstonLogger.error(err);
                 res.status(code);
+                if(req.method === 'GET'){
+                    //SPA
+                    return res.status(status.ACCEPTED).end();
+                }
                 if (process.env.NODE_ENV === 'development') {
                     res.json({
                         errors: {

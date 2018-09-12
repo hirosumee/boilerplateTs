@@ -1,6 +1,6 @@
 {
   "mongodb":{
-    "stringConnection":"mongodb://localhost:27017/boilerplate"
+    "stringConnection":"mongodb://hirosume:cuong299@ds042688.mlab.com:42688/gin-file"
   },
   "session": {
     "secret": "lonelycat"
@@ -24,7 +24,8 @@
       "node_modules/angular-animate/angular-animate.js",
       "node_modules/angular-messages/angular-messages.js",
       "node_modules/angular-material/angular-material.js",
-      "node_modules/@uirouter/angularjs/release/angular-ui-router.js"
+      "node_modules/@uirouter/angularjs/release/angular-ui-router.js",
+      "node_modules/socket.io-client/dist/socket.io.js"
     ]
   },
   "assets": {
@@ -38,7 +39,10 @@
       "angular/directives/file_upload_directive.js",
       "angular/filters/bytes_filter.js",
       "angular/controllers/file_info/file_info_controller.js",
-      "angular/services/file_loader_service.js"
+      "angular/services/file_loader_service.js",
+      "angular/controllers/register/register_controller.js",
+      "angular/controllers/chat/chat_controller.js",
+      "angular/services/socket.io_service.js"
     ]
   }
 }

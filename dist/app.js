@@ -22,9 +22,18 @@ class App {
     }
     configure() {
         passportJs_1.default();
+        //set up session
+        this.sessionInstance = session({
+            secret: config.get("session.secret"),
+            cookie: {
+                maxAge: 60000
+            },
+            resave: false,
+            saveUninitialized: false
+        });
         //connect mongoose
         mongoose.Promise = global.Promise;
-        mongoose_1.connect(config.get('mongodb.stringConnection'))
+        mongoose_1.connect(config.get("mongodb.stringConnection"))
             .then(() => {
             //mongooseConnection is useful when we want to use native mongodb
             this.mongooseConnection = mongoose.connection;
@@ -34,13 +43,13 @@ class App {
             winstonLogger_1.default.error(`Mongoose occurred a error: ${error}`);
         });
         //Morgan middleware
-        this.environmentHost === "development" ?
-            this.app.use(logger("combined"))
+        this.environmentHost === "development"
+            ? this.app.use(logger("combined"))
             : this.app.use(logger("common"));
         //view engine
-        this.app.set('view engine', 'ejs');
+        this.app.set("view engine", "ejs");
         //static resource config
-        this.app.use(express.static(__dirname + '/../public'));
+        this.app.use(express.static(__dirname + "/../public"));
         //body parser middleware config
         this.app.use(body_parser_1.json());
         this.app.use(body_parser_1.urlencoded({
@@ -48,19 +57,14 @@ class App {
             limit: "5mb",
             parameterLimit: 5000
         }));
-        this.app.use(session({
-            secret: config.get("session.secret"),
-            cookie: {
-                maxAge: 60000
-            },
-            resave: false,
-            saveUninitialized: false
-        }));
+        this.app.use(this.sessionInstance);
         // passport config
         this.app.use(passport.initialize());
         this.app.use(passport.session());
         //error handler
-        this.environmentHost === "development" ? this.app.use(errorHandler()) : undefined;
+        this.environmentHost === "development"
+            ? this.app.use(errorHandler())
+            : undefined;
         this.app.use(routers_1.default.getRoute());
     }
 }

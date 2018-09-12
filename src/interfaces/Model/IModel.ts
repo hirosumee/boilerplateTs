@@ -25,6 +25,9 @@ export abstract class Model implements IModel {
     public get model() {
         return this._model;
     }
+    public set model(model:m<any>){
+        throw new Error("read only property");
+    }
 
     protected constructor(model_name = 'user') {
         this.model_name = model_name;

@@ -1,10 +1,12 @@
 import App from "./app";
 import * as http from "http";
 import winstonLogger from "./middleWares/winstonLogger";
-
+import {initialSocket} from "./socket.io";
 const port = normalizePort(process.env.PORT);
 
-const server = http.createServer(App.app);
+const server:http.Server = http.createServer(App.app);
+
+initialSocket(server);
 
 server.listen(port);
 server.on(

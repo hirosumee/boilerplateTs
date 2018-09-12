@@ -3,6 +3,7 @@ import * as multer from "multer";
 import {NextFunction, Request, RequestHandler, Response} from "express";
 import * as config from "config";
 import {fileModel} from "../../models/file";
+import * as status from "http-status";
 
 const upload = multer(config.get('multer'));
 
@@ -34,7 +35,7 @@ class fileRouter extends iRouter {
 
                             try {
                                 await fileModel.model.create(payload);
-                                res.status(200).json(payload);
+                                res.status(status.ACCEPTED).json(payload);
                             } catch (e) {
                                 next(e);
                             }
@@ -42,7 +43,7 @@ class fileRouter extends iRouter {
                         }
                     });
                 } else {
-                    res.status(403).send({status: 'error', message: 'UnAuthorized'});
+                    res.status(status.UNAUTHORIZED).send({status: 'error', message: 'UnAuthorized'});
                 }
             })
             .post('/load/:scope', async function (request: Request, response: Response, next: NextFunction) {
@@ -64,10 +65,13 @@ class fileRouter extends iRouter {
                         }
                     }
                     default: {
-                        return response.status(405).send({status: 'error', message: 'method is not allowed'});
+                        return response.status(status.METHOD_NOT_ALLOWED).send({status: 'error', message: 'method is not allowed'});
                     }
                 }
             })
+            .post('/info/:id',async function (request:Request,response:Response,next:NextFunction) {
+                //check this file is public . if no then check this user is its owner
+            });
         return this;
     }
 
