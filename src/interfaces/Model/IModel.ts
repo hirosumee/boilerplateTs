@@ -1,4 +1,4 @@
-import {Model as m, model, Schema} from "mongoose";
+import { Model as m, model, Schema } from 'mongoose';
 
 export interface IModel {
     schema: Schema;
@@ -25,13 +25,12 @@ export abstract class Model implements IModel {
     public get model() {
         return this._model;
     }
-    public set model(model:m<any>){
-        throw new Error("read only property");
+    public set model(model: m<any>) {
+        throw new Error('read only property');
     }
 
     protected constructor(model_name = 'user') {
         this.model_name = model_name;
-        this.setSchema()
-            .configModel();
+        this.setSchema().configModel();
     }
 }

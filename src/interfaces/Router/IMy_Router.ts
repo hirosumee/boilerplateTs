@@ -1,20 +1,19 @@
-import { Router} from 'express';
-import {PathParams, RequestHandlerParams} from "express-serve-static-core";
+import { Router } from 'express';
+import { PathParams, RequestHandlerParams } from 'express-serve-static-core';
 
-export interface IMy_Router{
-    getRoute():Router;
-    registerRouter():any;
-    middlewareRegister(func:RequestHandlerParams):any;
+export interface IMy_Router {
+    getRoute(): Router;
+    registerRouter(): any;
+    middlewareRegister(func: RequestHandlerParams): any;
 }
-export abstract class iRouter implements IMy_Router{
-    protected router:Router;
+export abstract class iRouter implements IMy_Router {
+    protected router: Router;
     getRoute(): Router {
         return this.router;
     }
 
     middlewareRegister(func: RequestHandlerParams): iRouter {
-        this.getRoute()
-            .use(func);
+        this.getRoute().use(func);
         return this;
     }
 
@@ -26,7 +25,7 @@ export abstract class iRouter implements IMy_Router{
         this.router.use(path, route);
         return this;
     }
-    protected constructor(){
+    protected constructor() {
         this.router = Router();
         this.registerRouter();
     }

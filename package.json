@@ -9,7 +9,11 @@
     "start": "node ./dist",
     "build": "tsc",
     "public": "cd public && npm install",
-    "serve": " npm run public && npm run dev"
+    "serve": " npm run public && npm run dev",
+    "formatJs": "prettier --write '**/**.js'",
+    "formatTs": "prettier --write '**/**.ts'",
+    "tslint":"tslint 'src/**.ts'",
+    "eslint":"eslint ./public"
   },
   "keywords": [],
   "author": "",
@@ -35,6 +39,7 @@
     "bcrypt": "^3.0.0",
     "body-parser": "^1.18.2",
     "config": "^2.0.1",
+    "debug": "^4.0.1",
     "dotenv": "^6.0.0",
     "ejs": "^2.6.1",
     "errorhandler": "^1.5.0",
@@ -51,5 +56,8 @@
     "typescript": "^2.7.2",
     "typescript-eslint-parser": "^14.0.0",
     "winston": "^2.4.1"
+  },
+  "devDependencies": {
+    "tslint-config-prettier": "^1.15.0"
   }
 }

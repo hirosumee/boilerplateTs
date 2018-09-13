@@ -10,7 +10,6 @@ socket_io_1.initialSocket(server);
 server.listen(port);
 server.on("listening", () => {
     winstonLogger_1.default.info("Server is running on port :" + port);
-    //console.log("Server is running on port :"+port);
 });
 server.on("error", () => {
     winstonLogger_1.default.error("Server orcur a error!!");

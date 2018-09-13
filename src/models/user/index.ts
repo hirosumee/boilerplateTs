@@ -1,20 +1,22 @@
-import {Schema, model} from 'mongoose';
-import {Model} from "../../interfaces/Model/IModel";
+import { Schema, model } from 'mongoose';
+import { Model } from '../../interfaces/Model/IModel';
 
-class UserModel extends Model{
+class UserModel extends Model {
     setSchema(): UserModel {
-        this.schema = new Schema({
-            username: {type: String, unique: true},
-            password: {type: String}
-        }, {timestamps: true});
+        this.schema = new Schema(
+            {
+                username: { type: String, unique: true },
+                password: { type: String }
+            },
+            { timestamps: true }
+        );
         return this;
     }
 
-
     constructor() {
-       super();
+        super();
     }
 }
 let userModel = new UserModel();
 
-export {userModel}
+export { userModel };
