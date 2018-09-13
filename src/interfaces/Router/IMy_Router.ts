@@ -8,25 +8,27 @@ export interface IMy_Router {
 }
 export abstract class iRouter implements IMy_Router {
     protected router: Router;
-    getRoute(): Router {
+    
+    protected constructor() {
+        this.router = Router();
+        this.registerRouter();
+    }
+
+    public getRoute(): Router {
         return this.router;
     }
 
-    middlewareRegister(func: RequestHandlerParams): iRouter {
+    public middlewareRegister(func: RequestHandlerParams): iRouter {
         this.getRoute().use(func);
         return this;
     }
 
-    registerRouter(): iRouter {
+    public registerRouter(): iRouter {
         return this;
     }
 
-    use(path: PathParams, route: Router): iRouter {
+    public use(path: PathParams, route: Router): iRouter {
         this.router.use(path, route);
         return this;
-    }
-    protected constructor() {
-        this.router = Router();
-        this.registerRouter();
     }
 }

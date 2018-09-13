@@ -2,7 +2,7 @@ import { Model as m, model, Schema } from 'mongoose';
 
 export interface IModel {
     schema: Schema;
-    model_name: String;
+    model_name: string;
     _model: any;
 
     setSchema(): IModel;
@@ -11,13 +11,18 @@ export interface IModel {
 }
 
 export abstract class Model implements IModel {
-    _model: m<any>;
-    model_name: string = 'user';
-    schema: Schema;
+    public _model: m<any>;
+    public model_name: string = 'user';
+    public schema: Schema;
 
-    abstract setSchema(): Model;
+    protected constructor(model_name = 'user') {
+        this.model_name = model_name;
+        this.setSchema().configModel();
+    }
 
-    configModel(): Model {
+    public abstract setSchema(): Model;
+
+    public configModel(): Model {
         this._model = model(this.model_name, this.schema);
         return this;
     }
@@ -29,8 +34,4 @@ export abstract class Model implements IModel {
         throw new Error('read only property');
     }
 
-    protected constructor(model_name = 'user') {
-        this.model_name = model_name;
-        this.setSchema().configModel();
-    }
 }

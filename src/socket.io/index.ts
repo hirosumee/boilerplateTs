@@ -20,7 +20,7 @@ export function initialSocket(server: Server) {
                 const user = await userModel.model.findById(user_id);
                 if (user) {
                     socket.user = user;
-                } else throw new Error('UnAuthorized');
+                } else {throw new Error('UnAuthorized');}
             } catch (error) {
                 return next(error);
             }
@@ -28,8 +28,8 @@ export function initialSocket(server: Server) {
             next();
         }
     );
-    io.on('connection', function(socket: socket_io.Socket & SocketMk) {
-        console.log(socket.id, 'connected');
+    io.on('connection', (socket: socket_io.Socket & SocketMk) => {
+        console.info(socket.id, 'connected');
         console.log(socket.user);
     });
 }

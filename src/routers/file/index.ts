@@ -8,10 +8,15 @@ import * as status from 'http-status';
 const upload = multer(config.get('multer'));
 
 class fileRouter extends iRouter {
-    uploadMiddleWare: RequestHandler;
+    private uploadMiddleWare: RequestHandler;
 
-    registerRouter(): fileRouter {
-        let that: fileRouter = this;
+    constructor() {
+        super();
+        this.uploadMiddleWare = upload.single('fileupload');
+    }
+
+    public registerRouter(): fileRouter {
+        const that: fileRouter = this;
         this.getRoute()
             .post('/upload', function(req: Request, res: Response, next: NextFunction) {
                 if (req.isAuthenticated()) {
@@ -30,7 +35,7 @@ class fileRouter extends iRouter {
                                 path,
                                 owner: req.user._id,
                                 requirepassword: !!password,
-                                password: password
+                                password
                             };
 
                             try {
@@ -71,15 +76,11 @@ class fileRouter extends iRouter {
                 }
             })
             .post('/info/:id', async function(request: Request, response: Response, next: NextFunction) {
-                //check this file is public . if no then check this user is its owner
+                // check this file is public . if no then check this user is its owner
             });
         return this;
     }
 
-    constructor() {
-        super();
-        this.uploadMiddleWare = upload.single('fileupload');
-    }
 }
 
 export default new fileRouter();

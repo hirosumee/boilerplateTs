@@ -11,12 +11,12 @@ var winstonLogger = new winston.Logger({
             handleExceptions: true,
             humanReadableUnhandledException: true
         }),
-        new winston_1.transports.File({ filename: "server.log" })
+        new winston_1.transports.File({ filename: 'server.log' })
     ]
 });
 //
-winstonLogger.handleExceptions(new winston_1.transports.File({ filename: "exceptions.log" }));
-process.on("unhandledRejection", (reason, p) => {
-    winstonLogger.warn("Possibly Unhandled Rejection at :", p, "reason", reason);
+winstonLogger.handleExceptions(new winston_1.transports.File({ filename: 'exceptions.log' }));
+process.on('unhandledRejection', (reason, p) => {
+    winstonLogger.warn('Possibly Unhandled Rejection at :', p, 'reason', reason);
 });
 exports.default = winstonLogger;
