@@ -1,5 +1,5 @@
 <div>
-    <md-toolbar layout="row" md-colors="{background: 'pink'}" md-scroll-shrink>
+    <md-toolbar md-colors="{background: 'pink'}" md-scroll-shrink>
         <div class="md-toolbar-tools">
             <md-button class="md-icon-button" ng-click="vm.toggle()">
                 <i class="material-icons">
@@ -10,36 +10,44 @@
         </div>
     </md-toolbar>
 
-    <section layout="row" flex>
-        <md-sidenav class="md-sidenav-left" md-component-id="left" md-whiteframe="4" md-disable-backdrop
-            md-is-locked-open="vm.isOpen()" md-is-open="true">
-            <md-toolbar class="md-theme-indigo">
-                <h1 class="md-toolbar-tools">Sidenav Left</h1>
-            </md-toolbar>
-            <md-content layout-padding>
-                <md-button ng-click="vm.toggle()" class="md-primary">
-                    Close Sidenav Left
-                </md-button>
-                <p hide show-gt-md>
-                    This sidenav is locked open on your device. To go back to the default behavior,
-                    narrow your display.
-                </p>
-            </md-content>
-        </md-sidenav>
-        <md-content>
+    <section layout="row">
+        <div>
+            <md-sidenav class="md-sidenav-left" md-component-id="left" md-whiteframe="4" md-disable-backdrop
+                        md-is-locked-open="vm.isOpen()" md-is-open="true">
+                <!-- <md-toolbar class="md-theme-indigo">
+                    <h1 class="md-toolbar-tools">Sidenav Left</h1>
+                </md-toolbar> -->
+                <md-content layout-padding>
+                    <md-button ng-click="vm.toggle()" class="md-primary">
+                        Close Sidenav Left
+                    </md-button>
+                    <p hide show-gt-md>
+                        This sidenav is locked open on your device. To go back to the default behavior,
+                        narrow your display.
+                    </p>
+                </md-content>
+            </md-sidenav>
+        </div>
+        <div style="width: 80%;margin-left: 50px">
+            <div layout="column" style="margin: 0px;">
+                <div flex="80" style="margin: 0px;width:initial;overflow:scroll;">
+                    <md-list-item ng-class="{myself_chatmessage:item.sender == vm.userService.user.username}" class="md-3-line" ng-repeat="item in vm.messages" title="{{ item.time|date:'hh:mm:ss dd/MM/yyyy' }}" md-colors="{background: 'purple'}">
+                        <img ng-hide="item.sender == vm.userService.user.username" ng-src="https://i.imgur.com/fINuUV1.jpg" class="md-avatar" alt="{{item}}" />
+                        <div class="md-list-item-text"  layout="column">
+                            <h3 >{{ item.message.text}}</h3>
+                            <!--<p>{{ item }}</p>-->
+                        </div>
+                    </md-list-item>
+                </div>
+                <div>
+                    <md-input-container class="md-block">
+                        <label>Enter your message</label>
+                        <input style="width: 60%;margin-top: 10px;" ng-keypress="vm.enter($event)" ng-model="vm.message">
+                        <md-button style="margin-bottom: 10px;" md-colors="{background: 'pink'}" ng-click="vm.sendMessage()">Send</md-button>
+                    </md-input-container>
 
-            <md-list flex>
-                <md-subheader class="md-no-sticky">3 line item (with hover)</md-subheader>
-                <md-list-item class="md-3-line" ng-click="null">
-                    <img src="https://i.imgur.com/fINuUV1.jpg" class="md-avatar" alt="{{item.who}}" />
-                    <div class="md-list-item-text" layout="column">
-                        <h3>hihi</h3>
-                        <h4>afads</h4>
-                        <p>sfsdfds</p>
-                    </div>
-                </md-list-item>
-                <md-divider></md-divider>
-            </md-list>
-        </md-content>
+                </div>
+            </div>
+        </div>
     </section>
 </div>

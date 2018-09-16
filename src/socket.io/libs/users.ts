@@ -1,5 +1,5 @@
 
-class UserSocket {
+class UsersSocket {
     private USERSONLINE : Map<string,Set<string>> = new Map<string,Set<string>>();
     public UserSocket(){}
     public setUserOnline(username:string,socketID:string):void{
@@ -23,7 +23,7 @@ class UserSocket {
         }
     }
     public getUserOnline():any{
-        return this.USERSONLINE.keys();
+        return Array.from(this.USERSONLINE.keys());
     }
 }
-export default new UserSocket();
+export default new UsersSocket();

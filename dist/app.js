@@ -26,7 +26,7 @@ class App {
         this.sessionInstance = session({
             secret: config.get('session.secret'),
             cookie: {
-                maxAge: 60000
+                maxAge: 24 * 60 * 60 * 1000
             },
             resave: false,
             saveUninitialized: false

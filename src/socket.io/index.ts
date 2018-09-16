@@ -15,7 +15,11 @@ export function initialSocket(server: Server) {
 
     io.on('connection', (socket: socket_io.Socket & SocketMk) => {
         console.info(socket.user.username, 'online');
-
+        socket.join('Communication');
+        socket.on('message',function (message_form) {
+            message_form.sender = socket.user.username;
+            io.to('Communication').emit('listen_message',message_form);
+        });
         userOffline(socket);
     });
 }

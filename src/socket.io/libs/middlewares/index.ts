@@ -1,7 +1,7 @@
 import { NextFunction } from "express";
 import { SocketMk } from "../../../interfaces/Socket";
 import { userModel } from "../../../models/user";
-import socketUser from "../users";
+import socketsUser from "../users";
 
 export function authorized(){
     return async (socket: SocketIO.Socket & SocketMk, next: NextFunction): Promise<void> => {
@@ -18,22 +18,22 @@ export function authorized(){
                 throw new Error('UnAuthorized');
             }
         } catch (error) {
-            return next(error);
+            return next(error.message);
         }
 
         next();
     }
 }
 export function statusUser(){
-    return async (socket:SocketIO.Socket& SocketMk,next:NextFunction):Promise<void>=>{
-        socketUser.setUserOnline(socket.user.username,socket.id);
+    return (socket:SocketIO.Socket& SocketMk,next:NextFunction):void=>{
+        socketsUser.setUserOnline(socket.user.username,socket.id);
         next();
     }
 }
 
 export function userOffline(socket:SocketIO.Socket&SocketMk){
     socket.on('disconnect',(reason):void=>{
-        socketUser.removeSocket(socket.user.username,socket.id);
+        socketsUser.removeSocket(socket.user.username,socket.id);
         console.log(socket.user.username,'offline with reason :',reason);
     })
     

@@ -33,6 +33,12 @@ class UserRouter extends iRouter {
                     res.status(status.INTERNAL_SERVER_ERROR).send({ status: 'error' });
                 }
             })
+            .post('/whoisme', (req: Request, res: Response, next: NextFunction) => {
+                if(!req.user){
+                    return res.send({});
+                }
+                res.send({username:req.user.username});
+            })
             .post(
                 '/login',
                 passport.authenticate('local', {
