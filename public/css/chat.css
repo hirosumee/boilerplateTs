@@ -1,4 +1,18 @@
 .myself_chatmessage {
-    position: absolute;
-    right:10;
+    float: right;
+}
+.chatmessage{
+    margin-top: 10px;
+    width: 60%;
+    border-radius: 30px;
+}
+.friend_chatmessage {
+    float: left;
+}
+div > md-list-item {
+    min-height: 70px;
+    height: 70px;
+}
+.my-self-text{
+    text-align: end;
 }

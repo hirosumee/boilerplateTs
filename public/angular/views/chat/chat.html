@@ -13,29 +13,32 @@
     <section layout="row">
         <div>
             <md-sidenav class="md-sidenav-left" md-component-id="left" md-whiteframe="4" md-disable-backdrop
-                        md-is-locked-open="vm.isOpen()" md-is-open="true">
-                <!-- <md-toolbar class="md-theme-indigo">
-                    <h1 class="md-toolbar-tools">Sidenav Left</h1>
-                </md-toolbar> -->
-                <md-content layout-padding>
-                    <md-button ng-click="vm.toggle()" class="md-primary">
-                        Close Sidenav Left
+                md-is-open="true" >
+                <md-toolbar class="md-theme-indigo" >
+                    <h1 class="md-toolbar-tools">List room available</h1>
+                    <md-button ng-click="vm.toggle()">
+                        <i class="material-icons">
+                            {{vm.isOpen()?'keyboard_arrow_left':'keyboard_arrow_right'}}
+                        </i>
                     </md-button>
-                    <p hide show-gt-md>
-                        This sidenav is locked open on your device. To go back to the default behavior,
-                        narrow your display.
-                    </p>
+                </md-toolbar>
+                <md-content layout-padding>
+                    
                 </md-content>
             </md-sidenav>
         </div>
         <div style="width: 80%;margin-left: 50px">
             <div layout="column" style="margin: 0px;">
-                <div flex="80" style="margin: 0px;width:initial;overflow:scroll;">
-                    <md-list-item ng-class="{myself_chatmessage:item.sender == vm.userService.user.username}" class="md-3-line" ng-repeat="item in vm.messages" title="{{ item.time|date:'hh:mm:ss dd/MM/yyyy' }}" md-colors="{background: 'purple'}">
-                        <img ng-hide="item.sender == vm.userService.user.username" ng-src="https://i.imgur.com/fINuUV1.jpg" class="md-avatar" alt="{{item}}" />
-                        <div class="md-list-item-text"  layout="column">
-                            <h3 >{{ item.message.text}}</h3>
-                            <!--<p>{{ item }}</p>-->
+                <div flex="80" style="margin: 0px;width:initial;overflow:scroll;overflow-x: hidden;">
+                    <md-list-item md-colors="::{background: item.sender == vm.userService.user.username?'purple':'green'}"
+                        ng-class="::{myself_chatmessage:item.sender == vm.userService.user.username,friend_chatmessage:item.sender != vm.userService.user.username}"
+                        class="chatmessage md-3-line" ng-repeat="item in vm.messages" title="{{ item.time|date:'hh:mm:ss dd/MM/yyyy' }}"
+                        style="height:70px;min-height:70px;">
+                        <img ng-hide="::item.sender == vm.userService.user.username" ng-src="https://i.imgur.com/fINuUV1.jpg"
+                            class="md-avatar" alt="{{item}}" />
+                        <div class="md-list-item-text" layout="column">
+                            <h3 ng-class="{'my-self-text':item.sender == vm.userService.user.username}">{{
+                                item.message.text}}</h3>
                         </div>
                     </md-list-item>
                 </div>

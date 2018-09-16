@@ -9,12 +9,13 @@
     function fn($http) {
         let userService = {
             user:{},
+            isload:false,
             whoisme(){
                 const that = this;
                 return $http.post('/user/whoisme')
                     .then(function (res) {
                         that.user = res.data;
-                        console.log(res.data)
+                        that.isload = true;
                     })
             }
         };
