@@ -12,10 +12,10 @@ export interface IModel {
 
 export abstract class Model implements IModel {
     public _model: m<any>;
-    public model_name: string = 'user';
+    public model_name: string = 'users';
     public schema: Schema;
 
-    protected constructor(model_name = 'user') {
+    protected constructor(model_name = 'users') {
         this.model_name = model_name;
         this.setSchema().configModel();
     }

@@ -44,7 +44,9 @@
       "angular/controllers/register/register_controller.js",
       "angular/controllers/chat/chat_controller.js",
       "angular/services/socket.io_service.js",
-      "angular/services/user_service.js"
+      "angular/services/user_service.js",
+      "angular/services/channel_service.js",
+      "angular/services/message_service.js"
     ]
   }
 }

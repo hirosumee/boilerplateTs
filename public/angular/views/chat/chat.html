@@ -6,51 +6,46 @@
                     {{vm.isOpen()?'keyboard_arrow_left':'keyboard_arrow_right'}}
                 </i>
             </md-button>
-            <span>Normal</span>
+            <span>{{vm.channelService.currentChannel.name}}</span>
         </div>
     </md-toolbar>
+    <div>
+        <md-sidenav class="md-sidenav-left" md-component-id="left" md-whiteframe="4" md-disable-backdrop md-is-open="false">
+            <md-toolbar class="md-theme-indigo">
+                <h1 class="md-toolbar-tools">List room available</h1>
+                <md-button ng-click="vm.toggle()">
+                    <i class="material-icons">
+                        {{vm.isOpen()?'keyboard_arrow_left':'keyboard_arrow_right'}}
+                    </i>
+                </md-button>
+            </md-toolbar>
+            <md-content layout-padding>
 
-    <section layout="row">
-        <div>
-            <md-sidenav class="md-sidenav-left" md-component-id="left" md-whiteframe="4" md-disable-backdrop
-                md-is-open="true" >
-                <md-toolbar class="md-theme-indigo" >
-                    <h1 class="md-toolbar-tools">List room available</h1>
-                    <md-button ng-click="vm.toggle()">
-                        <i class="material-icons">
-                            {{vm.isOpen()?'keyboard_arrow_left':'keyboard_arrow_right'}}
-                        </i>
-                    </md-button>
-                </md-toolbar>
-                <md-content layout-padding>
-                    
-                </md-content>
-            </md-sidenav>
-        </div>
-        <div style="width: 80%;margin-left: 50px">
-            <div layout="column" style="margin: 0px;">
-                <div flex="80" style="margin: 0px;width:initial;overflow:scroll;overflow-x: hidden;">
-                    <md-list-item md-colors="::{background: item.sender == vm.userService.user.username?'purple':'green'}"
-                        ng-class="::{myself_chatmessage:item.sender == vm.userService.user.username,friend_chatmessage:item.sender != vm.userService.user.username}"
-                        class="chatmessage md-3-line" ng-repeat="item in vm.messages" title="{{ item.time|date:'hh:mm:ss dd/MM/yyyy' }}"
-                        style="height:70px;min-height:70px;">
-                        <img ng-hide="::item.sender == vm.userService.user.username" ng-src="https://i.imgur.com/fINuUV1.jpg"
-                            class="md-avatar" alt="{{item}}" />
-                        <div class="md-list-item-text" layout="column">
-                            <h3 ng-class="{'my-self-text':item.sender == vm.userService.user.username}">{{
-                                item.message.text}}</h3>
-                        </div>
-                    </md-list-item>
-                </div>
-                <div>
-                    <md-input-container class="md-block">
-                        <label>Enter your message</label>
-                        <input style="width: 60%;margin-top: 10px;" ng-keypress="vm.enter($event)" ng-model="vm.message">
-                        <md-button style="margin-bottom: 10px;" md-colors="{background: 'pink'}" ng-click="vm.sendMessage()">Send</md-button>
-                    </md-input-container>
-
-                </div>
+            </md-content>
+        </md-sidenav>
+    </div>
+    <div style="margin-left: 50px">
+        <div layout="column" style="margin: 0px;">
+            <div flex="80" style="margin: 0px;width:initial;overflow:scroll;overflow-x: hidden;">
+                <md-list-item md-colors="::{background: item.sender == vm.userService.user.username?'purple':'green'}"
+                    ng-class="::{myself_chatmessage:item.sender == vm.userService.user.username,friend_chatmessage:item.sender != vm.userService.user.username}"
+                    class="chatmessage md-3-line" ng-repeat="item in vm.messageService.messages" title="{{ item.createdAt|date:'hh:mm:ss dd/MM/yyyy' }}"
+                    style="height:70px;min-height:70px;">
+                    <img ng-hide="::item.createdBy == vm.userService.user.username" ng-src="https://i.imgur.com/fINuUV1.jpg"
+                        class="md-avatar" alt="{{item}}" />
+                    <div class="md-list-item-text" layout="column">
+                        <h3 ng-class="{'my-self-text':item.createdBy == vm.userService.user.username}">{{
+                            item.content}}</h3>
+                    </div>
+                </md-list-item>
+            </div>
+            <div>
+                <md-input-container class="md-block">
+                    <label>Enter your message</label>
+                    <input style="width: 60%;margin-top: 10px;" ng-keypress="vm.enter($event)" ng-model="vm.message">
+                    <md-button style="margin-bottom: 10px;" md-colors="{background: 'pink'}" ng-click="vm.sendMessage()">Send</md-button>
+                </md-input-container>
             </div>
         </div>
-    </section>
+    </div>
 </div>

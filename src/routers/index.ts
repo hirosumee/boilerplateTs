@@ -9,6 +9,7 @@ import HttpError from '../libraries/Classes/Libraries_Classes_Error';
 import homeRouter from './home';
 import userRouter from './user';
 import fileRouter from './file';
+import channelRouter from './channel';
 
 class RouterLoader extends iRouter {
     constructor() {
@@ -16,6 +17,7 @@ class RouterLoader extends iRouter {
         this.use('/', homeRouter.getRoute())
             .use('/user', userRouter.getRoute())
             .use('/file', fileRouter.getRoute())
+            .use('/channel',channelRouter.getRoute())
             //error catch
             .middlewareRegister((req: Request, res: Response, next: NextFunction) => {
                 // 404 catch
