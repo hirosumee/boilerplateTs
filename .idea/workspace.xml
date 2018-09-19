@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23d40195-2d4e-4ecf-a43f-54924d7a3f1c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/angular/services/message_service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/channel/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/message/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routers/channel/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/socket.io/libs/helpers.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/default.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/default.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/angular/controllers/chat/chat_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/angular/controllers/chat/chat_controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/angular/views/chat/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/angular/views/chat/chat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/Model/IModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/Model/IModel.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/socket.io/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/socket.io/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/user/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/user/index.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,14 +18,14 @@
     <session id="490120515">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="40" />
+          <entry key="project.closed" value="41" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="4" />
           <entry key="project.open.time.13" value="5" />
           <entry key="project.open.time.14" value="4" />
-          <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.15" value="3" />
           <entry key="project.open.time.16" value="3" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="1" />
@@ -47,7 +37,7 @@
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="41" />
+          <entry key="project.opened" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -65,7 +55,7 @@
           <entry key="local/boilerplate/boilerplate/users" value="7" />
           <entry key="log" value="10" />
           <entry key="md" value="1" />
-          <entry key="ts" value="99" />
+          <entry key="ts" value="101" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -79,13 +69,13 @@
           <entry key="MONGO" value="7" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="16" />
-          <entry key="TypeScript" value="99" />
+          <entry key="TypeScript" value="101" />
           <entry key="tsconfig" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="TypeScriptServerServiceImpl" value="36" />
+          <entry key="TypeScriptServerServiceImpl" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -95,11 +85,11 @@
           <entry key="env" value="79" />
           <entry key="gitignore" value="67" />
           <entry key="html" value="2861" />
-          <entry key="js" value="7004" />
+          <entry key="js" value="7012" />
           <entry key="json" value="500" />
           <entry key="log" value="1" />
-          <entry key="ts" value="11984" />
-          <entry key="txt" value="288" />
+          <entry key="ts" value="12137" />
+          <entry key="txt" value="336" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -108,10 +98,10 @@
           <entry key="EJS" value="1185" />
           <entry key="HTML" value="2871" />
           <entry key="JSON" value="470" />
-          <entry key="JavaScript" value="7006" />
+          <entry key="JavaScript" value="7014" />
           <entry key="Log" value="1" />
-          <entry key="PLAIN_TEXT" value="384" />
-          <entry key="TypeScript" value="11974" />
+          <entry key="PLAIN_TEXT" value="432" />
+          <entry key="TypeScript" value="12127" />
           <entry key="tsconfig" value="30" />
         </counts>
       </usages-collector>
@@ -125,27 +115,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/routers/index.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="4" column="57" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/angular/services/channel_service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="20" column="71" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/routers/channel/index.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
+            <state relative-caret-position="672">
               <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
@@ -179,6 +151,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/user/index.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="56">
+              <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/routers/user/index.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="31" column="85" lean-forward="true" selection-start-line="31" selection-start-column="85" selection-end-line="31" selection-end-column="85" />
+              <folding>
+                <element signature="e#0#44#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/models/message/index.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="504">
@@ -190,8 +183,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/angular/controllers/chat/chat_controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="728">
-              <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
+            <state relative-caret-position="532">
+              <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -205,11 +198,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/angular/services/message_service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+            <state relative-caret-position="728">
+              <caret line="26" column="42" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -217,7 +210,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1932">
+            <state relative-caret-position="112">
               <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
             </state>
           </provider>
@@ -304,7 +297,6 @@
         <option value="$PROJECT_DIR$/public/js/index.js" />
         <option value="$PROJECT_DIR$/src/index.ts" />
         <option value="$PROJECT_DIR$/public/angular/services/socket.io_service.js" />
-        <option value="$PROJECT_DIR$/src/routers/user/index.ts" />
         <option value="$PROJECT_DIR$/public/angular/services/user_service.js" />
         <option value="$PROJECT_DIR$/src/interfaces/Model/IModel.ts" />
         <option value="$PROJECT_DIR$/src/routers/index.ts" />
@@ -316,8 +308,9 @@
         <option value="$PROJECT_DIR$/src/routers/channel/index.ts" />
         <option value="$PROJECT_DIR$/src/models/message/index.ts" />
         <option value="$PROJECT_DIR$/src/socket.io/index.ts" />
-        <option value="$PROJECT_DIR$/public/angular/controllers/chat/chat_controller.js" />
         <option value="$PROJECT_DIR$/public/angular/services/message_service.js" />
+        <option value="$PROJECT_DIR$/public/angular/controllers/chat/chat_controller.js" />
+        <option value="$PROJECT_DIR$/src/routers/user/index.ts" />
       </list>
     </option>
   </component>
@@ -357,7 +350,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -595,6 +587,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -714,7 +707,8 @@
       <workItem from="1537145905952" duration="280000" />
       <workItem from="1537335555250" duration="3433000" />
       <workItem from="1537370509869" duration="64000" />
-      <workItem from="1537372841034" duration="4838000" />
+      <workItem from="1537372841034" duration="5067000" />
+      <workItem from="1537378077409" duration="889000" />
     </task>
     <task id="LOCAL-00001" summary="update routerloader">
       <created>1535128981558</created>
@@ -800,11 +794,18 @@
       <option name="project" value="LOCAL" />
       <updated>1536744452168</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add feature save message , load message">
+      <created>1537377886255</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1537377886255</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133568000" />
+    <option name="totallyTimeSpent" value="134686000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -832,12 +833,12 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="TypeScript" order="8" weight="0.3297587" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5010672" side_tool="true" weight="0.14038877" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49893278" weight="0.14038877" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49893278" weight="0.13953489" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Mongo Explorer" order="3" weight="0.20651014" />
-      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="4" sideWeight="0.62608695" visible="true" weight="0.21750322" />
+      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="4" sideWeight="0.62608695" visible="true" weight="0.22072072" />
       <window_info anchor="right" id="Run" order="5" sideWeight="0.37391305" side_tool="true" weight="0.27001068" />
     </layout>
   </component>
@@ -862,7 +863,8 @@
     <MESSAGE value="update procfile" />
     <MESSAGE value="update file info and file loader service" />
     <MESSAGE value="config socket.io" />
-    <option name="LAST_COMMIT_MESSAGE" value="config socket.io" />
+    <MESSAGE value="add feature save message , load message" />
+    <option name="LAST_COMMIT_MESSAGE" value="add feature save message , load message" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/dist/models/user/index.js">
@@ -1080,13 +1082,6 @@
     <entry file="file://$PROJECT_DIR$/src/interfaces/Model/IUser.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/user/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/models/file/index.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1108,27 +1103,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routers/user/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/routers/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="4" column="57" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1932">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/socket.io/libs/users.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1146,6 +1120,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/routers/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="57" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/angular/services/channel_service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
@@ -1155,11 +1136,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/routers/channel/index.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
+        <state relative-caret-position="672">
           <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/message/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/angular/services/message_service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="26" column="42" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/angular/views/chat/chat.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="12" column="122" selection-start-line="12" selection-start-column="122" selection-end-line="12" selection-end-column="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/angular/controllers/chat/chat_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1173,20 +1189,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/message/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/angular/views/chat/chat.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="12" column="122" selection-start-line="12" selection-start-column="122" selection-end-line="12" selection-end-column="122" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/socket.io/index.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="426">
@@ -1197,17 +1199,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/angular/controllers/chat/chat_controller.js">
+    <entry file="file://$PROJECT_DIR$/src/models/user/index.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
+        <state relative-caret-position="56">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/angular/services/message_service.js">
+    <entry file="file://$PROJECT_DIR$/src/routers/user/index.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+        <state relative-caret-position="336">
+          <caret line="31" column="85" lean-forward="true" selection-start-line="31" selection-start-column="85" selection-end-line="31" selection-end-column="85" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -9,6 +9,7 @@ import { loginRequired } from '../../middleWares/requestMiddleware';
 import { NextFunction } from 'express';
 import * as status from 'http-status';
 import { IUser } from '../../interfaces/Model/IUser';
+import {channelModel} from "../../models/channel";
 
 class UserRouter extends iRouter {
     constructor() {
@@ -27,10 +28,11 @@ class UserRouter extends iRouter {
                         username,
                         password: bcrypt.hashSync(password, 5)
                     });
+                    //add this user to Communication channel
+                    channelModel.model.findOneAndUpdate({name:'Communication'},{$push:{members:data._id}});
                     res.status(status.ACCEPTED).send(data);
                 } catch (e) {
                     next(e);
-                    res.status(status.INTERNAL_SERVER_ERROR).send({ status: 'error' });
                 }
             })
             .post('/whoisme', (req: Request, res: Response, next: NextFunction) => {
